@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="418dp"
+        android:layout_height="315dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <TextView
+            android:id="@+id/contador"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CONTADOR :"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/incrementar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/resetea"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="75dp"
+            android:text="Incrementa"
+            tools:ignore="MissingConstraints"
+            android:onClick="incrementar"
+
+            />
+
+        <Button
+            android:id="@+id/resetea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/incrementar"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="75dp"
+            android:text="Resetear"
+            tools:ignore="MissingConstraints"
+            android:onClick="resetear"
+
+
+            />
+
+        <Button
+            android:id="@+id/decrementar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="75dp"
+            android:text="Decrementa"
+            tools:ignore="MissingConstraints"
+            android:onClick="decrementar"
+            />
+
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
