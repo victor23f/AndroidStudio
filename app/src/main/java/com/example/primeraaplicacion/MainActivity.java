@@ -27,7 +27,8 @@ public class MainActivity extends Activity {
         mostrarRestultado();
     }
     public void mostrarRestultado(){
-        TextView resultadoTexto = (TextView)findViewById(R.id.contador);
-        resultadoTexto.setText("Contador: "+ contador);
+        TextView resultadoTexto = (TextView)findViewById(R.id.contadorNumero);
+        resultadoTexto.setText( "" + contador);
+
     }
 }
