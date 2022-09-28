@@ -29,7 +29,7 @@
             android:layout_height="50dp"
             android:textAlignment="center"
             android:textColor="@color/design_default_color_on_secondary"
-            android:textSize="24sp"
+            android:textSize="34sp"
             tools:ignore="MissingConstraints" />
 
 
@@ -43,20 +43,26 @@
 
         <Button
             android:id="@+id/incrementar"
-            android:layout_width="100dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="incrementar"
             android:text="+"
-            tools:ignore="MissingConstraints"
+            android:textSize="24sp"
 
-            />
+            tools:ignore="MissingConstraints" />
+
+        <Space
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+             />
 
         <Button
             android:id="@+id/decrementar"
-            android:layout_width="100dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="decrementar"
             android:text="-"
+            android:textSize="24sp"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
 
@@ -70,8 +76,6 @@
             android:id="@+id/resetea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="75dp"
             android:onClick="resetear"
             android:text="Resetear"
             tools:ignore="MissingConstraints"
