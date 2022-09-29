@@ -74,7 +74,7 @@
 
         <Button
             android:id="@+id/resetea"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="resetear"
             android:text="Resetear"
@@ -82,6 +82,28 @@
 
 
             />
+
+        <EditText
+            android:id="@+id/n_reseteo"
+            android:layout_width="72sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:cursorVisible="false"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Permitir Negativos"
+            android:textSize="12sp"
+            android:onClick="permitirNegativos"/>
+
     </LinearLayout>
 
 </RelativeLayout>
