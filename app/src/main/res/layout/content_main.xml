@@ -96,13 +96,13 @@
             />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBoxNegativos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Permitir Negativos"
             android:textSize="12sp"
-            android:onClick="permitirNegativos"/>
+            android:onClick="decrementar"/>
 
     </LinearLayout>
 
