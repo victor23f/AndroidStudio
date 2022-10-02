@@ -32,20 +32,24 @@ public class MainActivity extends Activity {
 
         resultadoTexto.setText( "" + contador);
     }
-    public void decrementar(View vista){
+    public void decrementar(View vista) {
         contador--;
-            CheckBox negativos = (CheckBox)findViewById(R.id.checkBoxNegativos);
-            if (!negativos.isChecked()&& (Integer.parseInt(resultadoTexto.getText().toString())==0)){
+        if (contador<0){
+            CheckBox negativo = (CheckBox) findViewById(R.id.checkBox);
+            if(!negativo.isChecked()){
                 contador=0;
             }
+        }
+        mostrarResultado();
+    }
 
         resultadoTexto.setText( "" + contador);
     }
-  //  public void mostrarRestultado(){
-    //    TextView resultadoTexto = (TextView)findViewById(R.id.contadorNumero);
-      //  resultadoTexto.setText( "" + contador);
+    public void mostrarRestultado(){
+        TextView resultadoTexto = (TextView)findViewById(R.id.contadorNumero);
+        resultadoTexto.setText( "" + contador);
 
-    //}
+    }
 
 
 }
