@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     public void decrementar(View vista) {
         contador--;
         if (contador<0){
-            CheckBox negativo = (CheckBox) findViewById(R.id.checkBox);
+            CheckBox negativo = (CheckBox) findViewById(R.id.checkBoxNegativos);
             if(!negativo.isChecked()){
                 contador=0;
             }
