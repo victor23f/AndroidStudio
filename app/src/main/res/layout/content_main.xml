@@ -95,14 +95,19 @@
             android:cursorVisible="false"
             />
 
-        <CheckBox
-            android:id="@+id/checkBoxNegativos"
+        <RadioButton
+            android:id="@+id/positivos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Permitir Negativos"
-            android:textSize="12sp"
-            android:onClick="decrementar"/>
+            android:text="Positivos" />
+
+        <RadioButton
+            android:id="@+id/negativos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Negativos" />
 
     </LinearLayout>
 
